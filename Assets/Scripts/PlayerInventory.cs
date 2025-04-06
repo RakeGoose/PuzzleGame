@@ -9,7 +9,7 @@ public class PlayerInventory : MonoBehaviour
     public void AddKey(string keyID)
     {
         keys.Add(keyID);
-        Debug.Log("Key collected!");
+        Debug.Log("Key collected: " + keyID);
     }
 
     public bool HasKey(string keyID)

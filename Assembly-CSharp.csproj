@@ -62,7 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/PlayerAnimation.cs" />
     <Compile Include="Assets/Scripts/PlayerInventory.cs" />
+    <Compile Include="Assets/Scripts/PressureButton.cs" />
     <Compile Include="Assets/Scripts/DoorTrigger.cs" />
+    <Compile Include="Assets/Scripts/GarageSwitchDoor.cs" />
+    <Compile Include="Assets/Scripts/GarageDoorLift.cs" />
     <Compile Include="Assets/Scripts/LevelWon.cs" />
     <Compile Include="Assets/Scripts/KeyPickup.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />

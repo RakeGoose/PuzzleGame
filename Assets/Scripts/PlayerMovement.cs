@@ -9,10 +9,12 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 12f;
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool isBreakablePlatform;
 
     public Transform groundCheck;
     public float checkRadius = 0.2f;
     public LayerMask groundLayer;
+    public LayerMask breakableLayer;
 
     void Start()
     {
@@ -25,8 +27,9 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveX * moveSpeed, rb.velocity.y);
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
+        isBreakablePlatform = Physics2D.OverlapCircle(groundCheck.position, checkRadius, breakableLayer);
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if((Input.GetButtonDown("Jump") && isGrounded) || (Input.GetButtonDown("Jump") && isBreakablePlatform))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }

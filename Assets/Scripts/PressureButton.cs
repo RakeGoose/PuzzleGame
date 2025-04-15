@@ -28,7 +28,7 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Box"))
+        if (other.CompareTag("Player") || other.CompareTag("Box") || other.CompareTag("BreakablePlatform"))
         {
             objectsOnButton++;
             connectedDoor.SetOpen(true);
@@ -37,7 +37,7 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.CompareTag("Player") || other.CompareTag("Box"))
+        if(other.CompareTag("Player") || other.CompareTag("Box") || other.CompareTag("BreakablePlatform"))
         {
             objectsOnButton--;
             if(objectsOnButton <= 0)

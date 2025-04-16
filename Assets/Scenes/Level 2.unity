@@ -318,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredKeyID: Silver
   openSprite: {fileID: 1491890913, guid: 22da444e9d4114951a30500696f060ec, type: 3}
+  isOpen: 0
 --- !u!61 &935591439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4218,6 +4219,63 @@ Transform:
   - {fileID: 1359779573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1941503748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.454253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.9045241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7066401
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806597324683170586, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039773392281369442, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
+      propertyPath: m_Name
+      value: LevelMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2acba4fbd5214ac58c466da779d4c3e, type: 3}
 --- !u!1001 &2009051012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4512,6 +4570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedDoor: {fileID: 935591438}
+  VictoryUI: {fileID: 0}
 --- !u!61 &2110322918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4768,6 +4827,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1941503748}
   - {fileID: 519420032}
   - {fileID: 1885240279}
   - {fileID: 1287856975}

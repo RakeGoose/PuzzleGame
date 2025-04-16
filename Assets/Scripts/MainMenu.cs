@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GoToLevelSelect()
     {
-        
+        SceneManager.LoadScene("LevelSelect");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ExitGame()
     {
-        
+        Application.Quit();
+        Debug.Log("Exit called (Editor won't quit)");
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
     }
 }

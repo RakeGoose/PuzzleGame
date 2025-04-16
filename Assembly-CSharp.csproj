@@ -60,7 +60,9 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.55f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/LevelSelector.cs" />
     <Compile Include="Assets/Scripts/PlayerAnimation.cs" />
+    <Compile Include="Assets/Scripts/InstructionMenu.cs" />
     <Compile Include="Assets/Scripts/FollowCam (1).cs" />
     <Compile Include="Assets/Scripts/PlayerInventory.cs" />
     <Compile Include="Assets/Scripts/PressureButton.cs" />
@@ -69,10 +71,12 @@
     <Compile Include="Assets/Scripts/GarageSwitchDoor.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
     <Compile Include="Assets/Scripts/GarageDoorLift.cs" />
+    <Compile Include="Assets/Scripts/FloatingKey.cs" />
     <Compile Include="Assets/Scripts/LevelWon.cs" />
     <Compile Include="Assets/Scripts/CameraShake.cs" />
     <Compile Include="Assets/Scripts/KeyPickup.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/Pause.cs" />
     <Compile Include="Assets/Scripts/BreakablePlatforms.cs" />
     <Compile Include="Assets/Scripts/HammerAttack.cs" />
   </ItemGroup>
@@ -92,6 +96,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/Sprites/Buttons/Buttons Pack/README.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />

@@ -9,6 +9,7 @@ public class LevelWon : MonoBehaviour
     public DoorTrigger linkedDoor;
 
     private GameObject player;
+    public GameObject VictoryUI;
 
     void Update()
     {
@@ -33,10 +34,12 @@ public class LevelWon : MonoBehaviour
         {
             anim.SetTrigger("EnterDoor");
             StartCoroutine(DestroyAfterAnimation(anim));
+           
         }
         else
         {
             Destroy(player);
+            ActivateVictoryUI();
         }
 
         
@@ -60,9 +63,18 @@ public class LevelWon : MonoBehaviour
         }
     }
 
+    private void ActivateVictoryUI()
+    {
+        if(VictoryUI != null)
+        {
+            VictoryUI.SetActive(true);
+        }
+    }
+
     private IEnumerator DestroyAfterAnimation(Animator anim)
     {
         yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
         Destroy(player);
+        ActivateVictoryUI();
     }
 }

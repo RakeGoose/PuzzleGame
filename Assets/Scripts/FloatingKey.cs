@@ -21,10 +21,5 @@ public class FloatingKey : MonoBehaviour
     {
         float newY = Mathf.Sin(Time.time * floatSpeed) * floatStrength;
         transform.position = new Vector3(initialPosition.x, initialPosition.y + newY, initialPosition.z);
-
-        if (rotate)
-        {
-            transform.Rotate(0f, 0f, 45f * Time.deltaTime);
-        }
     }
 }

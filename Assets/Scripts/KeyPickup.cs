@@ -6,7 +6,7 @@ public class KeyPickup : MonoBehaviour
 {
     public string keyID = "Silver";
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -14,8 +14,16 @@ public class KeyPickup : MonoBehaviour
             if(inventory != null)
             {
                 inventory.AddKey(keyID);
-                Destroy(gameObject);
+                
             }
+
+            PlayerFlash flash = other.GetComponent<PlayerFlash>();
+            if(flash !=null)
+            {
+                flash.FlashWhite();
+            }
+
+            Destroy(gameObject);
         }
     }
 

@@ -9,7 +9,7 @@ public class DoorTrigger : MonoBehaviour
 
     private bool playerInRange = false;
     private GameObject player;
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     private Animator anim;
 
@@ -52,7 +52,15 @@ public class DoorTrigger : MonoBehaviour
         {
             player = other.gameObject;
             playerInRange = true;
+
+            var prompt = player.GetComponentInChildren<InteractionPrompt>();
+            if (prompt != null)
+            {
+                prompt.ShowPrompt(true, isOpen);
+            }
         }
+
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -60,8 +68,17 @@ public class DoorTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            
+
+            var prompt = player.GetComponentInChildren<InteractionPrompt>();
+            if(prompt != null)
+            {
+                prompt.ShowPrompt(true, isOpen);
+            }
+
             player = null;
         }
+
     }
 
     public bool IsOpen()

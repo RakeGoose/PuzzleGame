@@ -60,9 +60,11 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.55f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/PlayerFlash.cs" />
     <Compile Include="Assets/Scripts/LevelSelector.cs" />
     <Compile Include="Assets/Scripts/PlayerAnimation.cs" />
     <Compile Include="Assets/Scripts/InstructionMenu.cs" />
+    <Compile Include="Assets/Scripts/VictoryUIManager.cs" />
     <Compile Include="Assets/Scripts/FollowCam (1).cs" />
     <Compile Include="Assets/Scripts/PlayerInventory.cs" />
     <Compile Include="Assets/Scripts/PressureButton.cs" />
@@ -71,9 +73,14 @@
     <Compile Include="Assets/Scripts/GarageSwitchDoor.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
     <Compile Include="Assets/Scripts/GarageDoorLift.cs" />
+    <Compile Include="Assets/Scripts/MenuMusicPlayer.cs" />
     <Compile Include="Assets/Scripts/FloatingKey.cs" />
+    <Compile Include="Assets/Scripts/LevelMusicManager.cs" />
+    <Compile Include="Assets/Scripts/PromptFloating.cs" />
     <Compile Include="Assets/Scripts/LevelWon.cs" />
     <Compile Include="Assets/Scripts/CameraShake.cs" />
+    <Compile Include="Assets/Scripts/InteractionPrompt.cs" />
+    <Compile Include="Assets/Scripts/DoorPrompt.cs" />
     <Compile Include="Assets/Scripts/KeyPickup.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/Pause.cs" />
